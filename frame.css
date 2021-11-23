@@ -1,0 +1,124 @@
+html,body{ font-size: 11px; font-family: verdana; height:100%; margin: 0; padding: 0; background: none; }
+img { border:0 none; }
+
+/*--- горизонтальное меню в окне загрузки файлов ---*/
+.tabs { font: bold 11px/1.5em Verdana; float:left; width:100%; background:change-background; line-height:normal; }
+.tabs ul { margin:0; padding:10px 10px 0 5px; list-style:none; }
+.tabs li { display:inline; margin:0; padding:0; }
+.tabs a { float:left; background:url(dleimages/tableft.gif) no-repeat left top; margin:0; padding:0 0 0 7px; text-decoration:none; }
+.tabs a span { float:left; display:block; background:url(dleimages/tabright.gif) no-repeat right top; padding:5px 15px 4px 6px; color:#6B78A9; }
+
+.tabs a span {float:none;}
+
+.tabs a:hover span,
+.tabs a.current span { color:#6B78A9; }
+
+.tabs a:hover,
+.tabs a.current { background-position:0% -42px; }
+
+.tabs a:hover span,
+.tabs a.current span { background-position:100% -42px; }
+
+/*--- блок загрузки файлов и загруженных файлов ---*/
+.box { height: 300px; border:1px solid #B3B3B3; border-radius: 3px; background:#fff url(dleimages/shadow.png) repeat-x; overflow: auto; }
+.uploadedfile { width: 115px; height: 130px; margin: 10px 5px 5px 5px; border:1px solid #B3B3B3; box-shadow: 0px 1px 4px rgba(0,0,0,0.3); float: left; text-align: center; background:#fff; }
+.uploadimage { margin-top: 5px; width: 115px; height: 90px; display: table-cell; text-align: center; vertical-align:middle; }
+.info { text-align: left; white-space: nowrap; margin: 0 5px; overflow: hidden; }
+.button { padding:4px 10px 4px 10px; margin-left:2px; margin-top:5px; font: bold 11px/1.5em Verdana; color:#000; background:#F9F9F9; border:1px solid #CACACA; cursor:pointer; }
+.properties { float: left; margin-top:8px; }
+.linkbox { margin-top:5px; padding:10px; border:1px solid #B3B3B3; border-radius: 3px; background:#fff url(dleimages/shadow.png) repeat-x; }
+#stmode { padding:10px; }
+.file-box { width: 95%; border:1px solid #B3B3B3; border-radius: 3px; background-color: #F5F5F5; padding: 10px; margin-top: 10px; }
+
+/*--- HTML5 загрузчик файлов ---*/
+.qq-uploader { position:relative; width: 100%;}
+
+.qq-upload-button {
+    display:block; /* or inline-block */
+    width: 310px; 
+    padding:4px 10px 4px 10px;
+    margin-left:2px;
+    margin-top:5px;
+    font: bold 11px/1.5em Verdana;color:#000000;
+    background: #F9F9F9 url(dleimages/button.png) repeat-x;
+	border:1px solid #CACACA;
+	cursor:pointer;
+}
+.qq-upload-button-hover {outline:1px dotted black;}
+.qq-upload-button-focus {outline:1px dotted black;}
+
+.qq-upload-drop-area { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; background: #FF9797; text-align: center;  }
+.qq-upload-drop-area span { display: block; position: absolute; top: 50%; width: 100%; margin-top: -8px; font-size: 16px; }
+.qq-upload-drop-area-active {background:#FF7171;}
+
+.qq-upload-list {margin:0; padding:0; list-style:disc;}
+.qq-upload-list li { margin:0; padding:2px;}
+.qq-upload-file, .qq-upload-spinner, .qq-upload-size, .qq-upload-cancel, .qq-upload-failed-text { margin-right: 7px; }
+.qq-upload-spinner { display: none; background: url(dleimages/loading.gif); width: 15px; height: 15px; vertical-align: text-bottom; }
+.qq-upload-size,.qq-upload-cancel { font-size: 11px; }
+
+.qq-upload-failed-text {display:none;}
+.qq-upload-fail .qq-upload-failed-text {display:inline;}
+
+/*--- флеш загрузчик файлов ---*/
+.progressWrapper { width: 99%; overflow: hidden; }
+.progressContainer { margin: 5px; padding: 4px; border: solid 1px #B3B3B3; background-color: #F5F5F5; overflow: hidden;
+}
+/* Message */
+.message { margin: 1em 0; padding: 10px 20px; border: solid 1px #FFDD99; background-color: #FFFFCC; overflow: hidden; }
+
+/* Error */
+.red { border: solid 1px #B50000; background-color: #FFEBEB; }
+
+/* Current */
+.green { border: solid 1px #B3B3B3; background-color: #F5F5F5; }
+
+/* Complete */
+.blue { border: solid 1px #B3B3B3; background-color: #F5F5F5; }
+.progressName { font-size: 8pt; font-weight: 700; color: #555; width: 323px; height: 14px; text-align: left; white-space: nowrap; overflow: hidden; }
+.progressBarInProgress,
+.progressBarComplete,
+.progressBarError { font-size: 0; width: 0%; height: 2px; background-color: blue; margin-top: 2px; }
+.progressBarComplete { width: 100%; background-color: green; visibility: hidden; }
+.progressBarError { width: 100%; background-color: red; visibility: hidden; }
+.progressBarStatus { margin-top: 2px; width: 99%; font-size: 7pt; font-family: Arial; text-align: left; white-space: nowrap; }
+a.progressCancel { font-size: 0; display: block; height: 14px; width: 14px; background: url(../../engine/classes/uploads/swfupload/cancelbutton.gif) no-repeat -14px 0; float: right; }
+a.progressCancel:hover { background-position: 0 0; }
+.progress { overflow: hidden; margin-top: 10px; margin-bottom: 10px; background-color: whitesmoke; height: 10px; border-radius: 8px; background: #eee;
+	-webkit-box-shadow: 0 1px 0 white, 0 0px 0 1px rgba(0,0,0, 0.1) inset, 0 1px 4px rgba(0,0,0, 0.2) inset;
+	box-shadow: 0 1px 0 white, 0 0px 0 1px rgba(0,0,0, 0.1) inset, 0 1px 4px rgba(0,0,0, 0.2) inset;
+}
+ .progress .progress-bar { float:left; width: 0; height: 8px; font-size: 12px; line-height: 20px; color:white; text-align:center; background-color: #428bca; -webkit-box-shadow:inset 0 -1px 0 rgba(0, 0, 0, 0.15);  box-shadow:inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+	-webkit-transition:width 0.6s ease;
+	transition:width 0.6s ease;
+	border-radius: 8px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.progress-bar span{ position:absolute; width: 1px; height: 1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0 0 0 0); border:0; }
+.progress-blue {
+    background-image:-webkit-gradient(linear, left 0%, left 100%, from(#9bcff5), to(#6db9f0));
+    background-image:-webkit-linear-gradient(top, #9bcff5, 0%, #6db9f0, 100%);
+    background-image:-moz-linear-gradient(top, #9bcff5 0%, #6db9f0 100%);
+    background-image:linear-gradient(to bottom, #9bcff5 0%, #6db9f0 100%);
+    background-repeat:repeat-x;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9BCFF5', endColorstr='#FF6DB9F0', GradientType=0);
+    border:1px solid #55aeee;
+}
+
+hr { color: #999; border: 0px none; border-top: dashed 1px #999; height: 1px; }
+input, select, textarea { outline:none; }
+form { margin:0px; padding: 0px; }
+table { border:0 none; }
+table td { padding: 0; font-size: 11px; font-family: tahoma; }
+a { color: #4b719e; text-decoration:none; }
+a:hover { color: #4b719e; text-decoration: underline; }
+.navigation { color: #999898; font-size: 11px; font-family: tahoma; }
+.edit { border:1px solid #9E9E9E; color: #000; font-size: 11px; font-family: tahoma; background-color: #fff; }
+select { color: #000; font-size: 11px; font-family: tahoma; border: 1px solid #9E9E9E; }
+textarea { border: #9E9E9E 1px solid; color: #000; font-size: 11px; font-family: tahoma; background-color: #fff; }
+#hintbox{ position:absolute; top: 0; background-color: lightyellow; width: 150px; padding: 3px; border:1px solid #787878; font:normal 11px tahoma; line-height:18px; z-index:100; border-right: 2px solid #787878; border-bottom: 2px solid #787878; visibility: hidden; }
+.hintanchor { padding-left: 8px; }
+.xprofile textarea { width: 100%; height:90px; font-family: tahoma; font-size:11px; border:1px solid #9E9E9E;background:#fff; }
+.xprofile input { width:250px; height:18px; font-family: tahoma; font-size:11px; border:1px solid #9E9E9E;background:#fff; }
+.bk { background:#fff; }

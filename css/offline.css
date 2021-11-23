@@ -1,0 +1,47 @@
+/* +++++++ © 2016 Centroarts.com +++++++ */
+
+/* Сброс */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block } body { line-height: 1 } ol, ul { list-style: none } blockquote, q { quotes: none } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none } table { border-collapse: collapse; border-spacing: 0 }
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary { display: block; }
+
+html { min-height: 100%; position: relative; }
+html, html a {
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+body { margin-bottom: 40px; }
+
+/* Текст */
+body, select, input, textarea, button { font: 15px/1.5 Arial, Helvetica, sans-serif; color: #353535; outline: none; }
+
+a { outline: none; color: #3394e6; text-decoration: none; }
+	a:hover { text-decoration: underline; }
+
+	a img { border: 0 none; }
+	a > img { vertical-align: bottom; }
+
+.clr { clear: both }
+.clrfix:after { clear: both; content: ""; display: block; height: 0; width: 0; visibility: hidden }
+
+body { background: #fff; }
+
+.head { margin-bottom: 40px; text-align: left; }
+.offpage { max-width: 500px; padding: 4%; margin: 8% auto 0 auto; padding-bottom: 25px; }
+.logo { text-align: center; }
+	.logo > img { max-width: 120px; vertical-align: top; }
+	.wrap { text-align: center; }
+	.wrap > .title { font-size: 28px; display: block; margin: 4% 0 5% 0; }
+
+	.copyright {
+		position: absolute;
+		bottom: 0; left: 0; right: 0;
+		padding: 10px;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		font-size: .8em;
+		background-color: #f7f7f7;
+		color: #919191;
+	}
+	.copyright a { }
+	.copyright:hover { opacity: 1; }
